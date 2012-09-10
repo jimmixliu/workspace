@@ -1,0 +1,10 @@
+#! /usr/bin/perl -w
+
+my $what=shift @ARGV;
+
+while(<>){
+	if(/^($what)/){
+		print "We saw the $what in beginning $_;";
+	}
+}
+
