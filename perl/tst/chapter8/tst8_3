@@ -1,0 +1,10 @@
+#! /usr/bin/perl -w
+
+while(<>){
+	chomp;
+	if(/(\w+a)/){
+		print"$1 contains 'a'\n";
+	}else{
+		print"no Match:$_ \n";
+	}
+}
